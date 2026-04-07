@@ -1,0 +1,34 @@
+@baseUrl = http://localhost:3000
+
+### 1. GET ALL USERS (Tampilkan Semua)
+GET {{baseUrl}}/users
+
+###
+
+### 2. POST NEW USER (Tambah Data Gilang)
+POST {{baseUrl}}/users
+Content-Type: application/json
+
+{
+    "name": "Gilang"
+}
+
+###
+
+### 3. GET USER BY ID (Cek User ID 3)
+GET {{baseUrl}}/users/3
+
+###
+
+### 4. PUT UPDATE USER (Ubah Nama Alice)
+PUT {{baseUrl}}/users/1
+Content-Type: application/json
+
+{
+    "name": "Alice Updated"
+}
+
+###
+
+### 5. DELETE USER (Hapus Bob)
+DELETE {{baseUrl}}/users/2
